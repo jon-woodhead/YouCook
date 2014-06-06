@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9315E50F18FC20E4007DE128 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9315E50E18FC20E4007DE128 /* Foundation.framework */; };
+		9315E51118FC20E4007DE128 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9315E51018FC20E4007DE128 /* CoreGraphics.framework */; };
+		9315E51318FC20E4007DE128 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9315E51218FC20E4007DE128 /* UIKit.framework */; };
+		9315E51918FC20E4007DE128 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9315E51718FC20E4007DE128 /* InfoPlist.strings */; };
+		9315E51B18FC20E4007DE128 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E51A18FC20E4007DE128 /* main.m */; };
+		9315E51F18FC20E4007DE128 /* YCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E51E18FC20E4007DE128 /* YCAppDelegate.m */; };
+		9315E52118FC20E4007DE128 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9315E52018FC20E4007DE128 /* Images.xcassets */; };
+		9315E52818FC20E5007DE128 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9315E52718FC20E5007DE128 /* XCTest.framework */; };
+		9315E52918FC20E5007DE128 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9315E50E18FC20E4007DE128 /* Foundation.framework */; };
+		9315E52A18FC20E5007DE128 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9315E51218FC20E4007DE128 /* UIKit.framework */; };
+		9315E53218FC20E5007DE128 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9315E53018FC20E5007DE128 /* InfoPlist.strings */; };
+		9315E54118FC21A0007DE128 /* YCStartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E53F18FC21A0007DE128 /* YCStartVC.m */; };
+		9315E54218FC21A0007DE128 /* YCStartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9315E54018FC21A0007DE128 /* YCStartVC.xib */; };
+		9315E54718FC23D8007DE128 /* YCSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E54518FC23D8007DE128 /* YCSearchVC.m */; };
+		9315E54818FC23D8007DE128 /* YCSearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9315E54618FC23D8007DE128 /* YCSearchVC.xib */; };
+		9315E54A18FC2540007DE128 /* YCStartVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E54918FC2540007DE128 /* YCStartVCTests.m */; };
+		9315E55018FD1F6F007DE128 /* YCRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E54F18FD1F6F007DE128 /* YCRecipe.m */; };
+		9315E55318FD2038007DE128 /* YCSearchService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E55218FD2038007DE128 /* YCSearchService.m */; };
+		9315E55518FD2604007DE128 /* exampleSearchResults in Resources */ = {isa = PBXBuildFile; fileRef = 9315E55418FD2604007DE128 /* exampleSearchResults */; };
+		9315E55618FD2604007DE128 /* exampleSearchResults in Resources */ = {isa = PBXBuildFile; fileRef = 9315E55418FD2604007DE128 /* exampleSearchResults */; };
+		9315E56818FD4412007DE128 /* YCRecipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E56618FD4412007DE128 /* YCRecipeCell.m */; };
+		9315E56918FD4412007DE128 /* YCRecipeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9315E56718FD4412007DE128 /* YCRecipeCell.xib */; };
+		9315E56D18FD4ED9007DE128 /* YCIngredientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E56B18FD4ED9007DE128 /* YCIngredientCell.m */; };
+		9315E56E18FD4ED9007DE128 /* YCIngredientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9315E56C18FD4ED9007DE128 /* YCIngredientCell.xib */; };
+		9315E57418FD515C007DE128 /* YCRecipeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E57218FD515C007DE128 /* YCRecipeVC.m */; };
+		9315E57518FD515C007DE128 /* YCRecipeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9315E57318FD515C007DE128 /* YCRecipeVC.xib */; };
+		9315E60318FD747F007DE128 /* content.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9315E60218FD747F007DE128 /* content.txt */; };
+		9315E60418FD747F007DE128 /* content.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9315E60218FD747F007DE128 /* content.txt */; };
+		9315E60618FD8178007DE128 /* YCSearchVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E60518FD8178007DE128 /* YCSearchVCTests.m */; };
+		931AF2DF191D096700D53E2E /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 931AF2DE191D096700D53E2E /* libOCMock.a */; };
+		931AF2E1191D0F4C00D53E2E /* YCMyRecipesVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 931AF2E0191D0F4C00D53E2E /* YCMyRecipesVCTests.m */; };
+		931AF2E5191D2E7E00D53E2E /* YCMain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 931AF2E4191D2E7E00D53E2E /* YCMain.jpg */; };
+		931AF2E7191D2E8400D53E2E /* YCMain@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 931AF2E6191D2E8400D53E2E /* YCMain@2x.jpg */; };
+		934570C9191A4C56009F68F2 /* pageBg0.png in Resources */ = {isa = PBXBuildFile; fileRef = 934570C3191A4C56009F68F2 /* pageBg0.png */; };
+		934570CA191A4C56009F68F2 /* pageBg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 934570C4191A4C56009F68F2 /* pageBg1.png */; };
+		934570CB191A4C56009F68F2 /* pageBg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 934570C5191A4C56009F68F2 /* pageBg2.png */; };
+		934570CC191A4C56009F68F2 /* pageBg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 934570C6191A4C56009F68F2 /* pageBg3.png */; };
+		934570CD191A4C56009F68F2 /* pageBg4.png in Resources */ = {isa = PBXBuildFile; fileRef = 934570C7191A4C56009F68F2 /* pageBg4.png */; };
+		934570CE191A4C56009F68F2 /* pageBg5.png in Resources */ = {isa = PBXBuildFile; fileRef = 934570C8191A4C56009F68F2 /* pageBg5.png */; };
+		934570D4191A5127009F68F2 /* pageBg6.png in Resources */ = {isa = PBXBuildFile; fileRef = 934570CF191A5127009F68F2 /* pageBg6.png */; };
+		934570D5191A5127009F68F2 /* pageBg7.png in Resources */ = {isa = PBXBuildFile; fileRef = 934570D0191A5127009F68F2 /* pageBg7.png */; };
+		934570D6191A5127009F68F2 /* pageBg8.png in Resources */ = {isa = PBXBuildFile; fileRef = 934570D1191A5127009F68F2 /* pageBg8.png */; };
+		934570D7191A5127009F68F2 /* pageBg9.png in Resources */ = {isa = PBXBuildFile; fileRef = 934570D2191A5127009F68F2 /* pageBg9.png */; };
+		934570D8191A5127009F68F2 /* pageBg10.png in Resources */ = {isa = PBXBuildFile; fileRef = 934570D3191A5127009F68F2 /* pageBg10.png */; };
+		93E897F11911400400ECD8F7 /* YCSearchServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E897F01911400400ECD8F7 /* YCSearchServiceTests.m */; };
+		93E897F61911501700ECD8F7 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E897F51911501700ECD8F7 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		93E897F71911501700ECD8F7 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E897F51911501700ECD8F7 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		93E897FA1911502E00ECD8F7 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E897F91911502E00ECD8F7 /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		93E897FB1911502E00ECD8F7 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E897F91911502E00ECD8F7 /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		93E898011912552C00ECD8F7 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E898001912552C00ECD8F7 /* SSKeychain.m */; };
+		93E898021912552C00ECD8F7 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E898001912552C00ECD8F7 /* SSKeychain.m */; };
+		93E89804191285C200ECD8F7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E89803191285C200ECD8F7 /* Social.framework */; };
+		93E89807191393EC00ECD8F7 /* YCAbstractNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E89806191393EC00ECD8F7 /* YCAbstractNetworkService.m */; };
+		93E89808191393EC00ECD8F7 /* YCAbstractNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E89806191393EC00ECD8F7 /* YCAbstractNetworkService.m */; };
+		93E8980C1914EC5100ECD8F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93E8980F1914EC5100ECD8F7 /* Localizable.strings */; };
+		93E8980D1914EC5100ECD8F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93E8980F1914EC5100ECD8F7 /* Localizable.strings */; };
+		93E898101914F89B00ECD8F7 /* YCRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E54F18FD1F6F007DE128 /* YCRecipe.m */; };
+		93E898111914F8A600ECD8F7 /* YCUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F2774019010BFB00963DBB /* YCUserData.m */; };
+		93E898121914F8AA00ECD8F7 /* YCSearchService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315E55218FD2038007DE128 /* YCSearchService.m */; };
+		93E89855191687D300ECD8F7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E89854191687D300ECD8F7 /* MobileCoreServices.framework */; };
+		93E898561916881B00ECD8F7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E89854191687D300ECD8F7 /* MobileCoreServices.framework */; };
+		93E8985A19175E7A00ECD8F7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E8985919175E7A00ECD8F7 /* ImageIO.framework */; };
+		93E8986019176E9100ECD8F7 /* UIImagePickerController+OrientationFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E8985F19176E9100ECD8F7 /* UIImagePickerController+OrientationFix.m */; };
+		93E8986319178A4400ECD8F7 /* YCImageUploadService.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E8986219178A4400ECD8F7 /* YCImageUploadService.m */; };
+		93EA89221920D643005F60C9 /* Logo200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93EA89211920D643005F60C9 /* Logo200.jpg */; };
+		93EA895019228363005F60C9 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93EA894F19228363005F60C9 /* AdSupport.framework */; };
+		93EA89631923B157005F60C9 /* YCCommentSearchService.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EA89621923B157005F60C9 /* YCCommentSearchService.m */; };
+		93EA89661923B38E005F60C9 /* YCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EA89651923B38E005F60C9 /* YCComment.m */; };
+		93EA896B19249B35005F60C9 /* YCCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EA896919249B35005F60C9 /* YCCommentVC.m */; };
+		93EA896C19249B35005F60C9 /* YCCommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EA896A19249B35005F60C9 /* YCCommentVC.xib */; };
+		93EA896F1924A6D5005F60C9 /* YCCommentAddService.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EA896E1924A6D5005F60C9 /* YCCommentAddService.m */; };
+		93EA89711924EA4F005F60C9 /* YCCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EA89701924EA4F005F60C9 /* YCCommentTests.m */; };
+		93F2773419010B5000963DBB /* YCRecipeVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F2773319010B5000963DBB /* YCRecipeVCTests.m */; };
+		93F2773619010B7E00963DBB /* YCUserDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F2773519010B7E00963DBB /* YCUserDataTests.m */; };
+		93F2773D19010BD200963DBB /* YCMyRecipesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F2773B19010BD200963DBB /* YCMyRecipesVC.m */; };
+		93F2774119010BFB00963DBB /* YCUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F2774019010BFB00963DBB /* YCUserData.m */; };
+		93F277471901244500963DBB /* YCSavedRecipesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F277461901244500963DBB /* YCSavedRecipesService.m */; };
+		93F2774A190124C600963DBB /* YCCoreRecipeListService.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F27749190124C600963DBB /* YCCoreRecipeListService.m */; };
+		93F2774E190130E500963DBB /* YCSubmitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F2774D190130E500963DBB /* YCSubmitVC.m */; };
+		93F277501901323300963DBB /* YCSubmitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93F2774F1901323300963DBB /* YCSubmitVC.xib */; };
+		93F27754190154CE00963DBB /* YCSubmitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F27752190154CE00963DBB /* YCSubmitCell.m */; };
+		93F27755190154CE00963DBB /* YCSubmitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93F27753190154CE00963DBB /* YCSubmitCell.xib */; };
+		93F277581906C40B00963DBB /* YCSubmitRecipeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F277571906C40B00963DBB /* YCSubmitRecipeService.m */; };
+		93F2775A1906CA0100963DBB /* YCSubmitVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F277591906CA0100963DBB /* YCSubmitVCTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9315E52B18FC20E5007DE128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9315E50318FC20E4007DE128 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9315E50A18FC20E4007DE128;
+			remoteInfo = YouCook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9315E50B18FC20E4007DE128 /* YouCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9315E50E18FC20E4007DE128 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9315E51018FC20E4007DE128 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9315E51218FC20E4007DE128 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9315E51618FC20E4007DE128 /* YouCook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YouCook-Info.plist"; sourceTree = "<group>"; };
+		9315E51818FC20E4007DE128 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9315E51A18FC20E4007DE128 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9315E51C18FC20E4007DE128 /* YouCook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YouCook-Prefix.pch"; sourceTree = "<group>"; };
+		9315E51D18FC20E4007DE128 /* YCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCAppDelegate.h; sourceTree = "<group>"; };
+		9315E51E18FC20E4007DE128 /* YCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCAppDelegate.m; sourceTree = "<group>"; };
+		9315E52018FC20E4007DE128 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9315E52618FC20E5007DE128 /* YouCookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouCookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9315E52718FC20E5007DE128 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9315E52F18FC20E5007DE128 /* YouCookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YouCookTests-Info.plist"; sourceTree = "<group>"; };
+		9315E53118FC20E5007DE128 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9315E53E18FC21A0007DE128 /* YCStartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCStartVC.h; sourceTree = "<group>"; };
+		9315E53F18FC21A0007DE128 /* YCStartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCStartVC.m; sourceTree = "<group>"; };
+		9315E54018FC21A0007DE128 /* YCStartVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCStartVC.xib; sourceTree = "<group>"; };
+		9315E54418FC23D8007DE128 /* YCSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSearchVC.h; sourceTree = "<group>"; };
+		9315E54518FC23D8007DE128 /* YCSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSearchVC.m; sourceTree = "<group>"; };
+		9315E54618FC23D8007DE128 /* YCSearchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCSearchVC.xib; sourceTree = "<group>"; };
+		9315E54918FC2540007DE128 /* YCStartVCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCStartVCTests.m; sourceTree = "<group>"; };
+		9315E54E18FD1F6F007DE128 /* YCRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCRecipe.h; sourceTree = "<group>"; };
+		9315E54F18FD1F6F007DE128 /* YCRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCRecipe.m; sourceTree = "<group>"; };
+		9315E55118FD2038007DE128 /* YCSearchService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSearchService.h; sourceTree = "<group>"; };
+		9315E55218FD2038007DE128 /* YCSearchService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSearchService.m; sourceTree = "<group>"; };
+		9315E55418FD2604007DE128 /* exampleSearchResults */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = exampleSearchResults; sourceTree = "<group>"; };
+		9315E56518FD4412007DE128 /* YCRecipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCRecipeCell.h; sourceTree = "<group>"; };
+		9315E56618FD4412007DE128 /* YCRecipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCRecipeCell.m; sourceTree = "<group>"; };
+		9315E56718FD4412007DE128 /* YCRecipeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCRecipeCell.xib; sourceTree = "<group>"; };
+		9315E56A18FD4ED9007DE128 /* YCIngredientCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCIngredientCell.h; sourceTree = "<group>"; };
+		9315E56B18FD4ED9007DE128 /* YCIngredientCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCIngredientCell.m; sourceTree = "<group>"; };
+		9315E56C18FD4ED9007DE128 /* YCIngredientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCIngredientCell.xib; sourceTree = "<group>"; };
+		9315E57118FD515C007DE128 /* YCRecipeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCRecipeVC.h; sourceTree = "<group>"; };
+		9315E57218FD515C007DE128 /* YCRecipeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCRecipeVC.m; sourceTree = "<group>"; };
+		9315E57318FD515C007DE128 /* YCRecipeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCRecipeVC.xib; sourceTree = "<group>"; };
+		9315E60218FD747F007DE128 /* content.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = content.txt; sourceTree = "<group>"; };
+		9315E60518FD8178007DE128 /* YCSearchVCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSearchVCTests.m; sourceTree = "<group>"; };
+		931AF2DE191D096700D53E2E /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = External/libOCMock.a; sourceTree = "<group>"; };
+		931AF2E0191D0F4C00D53E2E /* YCMyRecipesVCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMyRecipesVCTests.m; sourceTree = "<group>"; };
+		931AF2E4191D2E7E00D53E2E /* YCMain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YCMain.jpg; sourceTree = "<group>"; };
+		931AF2E6191D2E8400D53E2E /* YCMain@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "YCMain@2x.jpg"; sourceTree = "<group>"; };
+		934570C3191A4C56009F68F2 /* pageBg0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pageBg0.png; sourceTree = "<group>"; };
+		934570C4191A4C56009F68F2 /* pageBg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pageBg1.png; sourceTree = "<group>"; };
+		934570C5191A4C56009F68F2 /* pageBg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pageBg2.png; sourceTree = "<group>"; };
+		934570C6191A4C56009F68F2 /* pageBg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pageBg3.png; sourceTree = "<group>"; };
+		934570C7191A4C56009F68F2 /* pageBg4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pageBg4.png; sourceTree = "<group>"; };
+		934570C8191A4C56009F68F2 /* pageBg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pageBg5.png; sourceTree = "<group>"; };
+		934570CF191A5127009F68F2 /* pageBg6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pageBg6.png; sourceTree = "<group>"; };
+		934570D0191A5127009F68F2 /* pageBg7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pageBg7.png; sourceTree = "<group>"; };
+		934570D1191A5127009F68F2 /* pageBg8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pageBg8.png; sourceTree = "<group>"; };
+		934570D2191A5127009F68F2 /* pageBg9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pageBg9.png; sourceTree = "<group>"; };
+		934570D3191A5127009F68F2 /* pageBg10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pageBg10.png; sourceTree = "<group>"; };
+		93E897F01911400400ECD8F7 /* YCSearchServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSearchServiceTests.m; sourceTree = "<group>"; };
+		93E897F41911501000ECD8F7 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		93E897F51911501700ECD8F7 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		93E897F81911502400ECD8F7 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		93E897F91911502E00ECD8F7 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		93E897FF1912552200ECD8F7 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		93E898001912552C00ECD8F7 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		93E89803191285C200ECD8F7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		93E89805191393EC00ECD8F7 /* YCAbstractNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCAbstractNetworkService.h; sourceTree = "<group>"; };
+		93E89806191393EC00ECD8F7 /* YCAbstractNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCAbstractNetworkService.m; sourceTree = "<group>"; };
+		93E8980E1914EC5100ECD8F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		93E89854191687D300ECD8F7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		93E8985919175E7A00ECD8F7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		93E8985E19176E9100ECD8F7 /* UIImagePickerController+OrientationFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+OrientationFix.h"; sourceTree = "<group>"; };
+		93E8985F19176E9100ECD8F7 /* UIImagePickerController+OrientationFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+OrientationFix.m"; sourceTree = "<group>"; };
+		93E8986119178A4400ECD8F7 /* YCImageUploadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCImageUploadService.h; sourceTree = "<group>"; };
+		93E8986219178A4400ECD8F7 /* YCImageUploadService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCImageUploadService.m; sourceTree = "<group>"; };
+		93EA89211920D643005F60C9 /* Logo200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Logo200.jpg; sourceTree = "<group>"; };
+		93EA894F19228363005F60C9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		93EA89611923B157005F60C9 /* YCCommentSearchService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCCommentSearchService.h; sourceTree = "<group>"; };
+		93EA89621923B157005F60C9 /* YCCommentSearchService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCommentSearchService.m; sourceTree = "<group>"; };
+		93EA89641923B38E005F60C9 /* YCComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCComment.h; sourceTree = "<group>"; };
+		93EA89651923B38E005F60C9 /* YCComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCComment.m; sourceTree = "<group>"; };
+		93EA896819249B35005F60C9 /* YCCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCCommentVC.h; sourceTree = "<group>"; };
+		93EA896919249B35005F60C9 /* YCCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCommentVC.m; sourceTree = "<group>"; };
+		93EA896A19249B35005F60C9 /* YCCommentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCCommentVC.xib; sourceTree = "<group>"; };
+		93EA896D1924A6D5005F60C9 /* YCCommentAddService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCCommentAddService.h; sourceTree = "<group>"; };
+		93EA896E1924A6D5005F60C9 /* YCCommentAddService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCommentAddService.m; sourceTree = "<group>"; };
+		93EA89701924EA4F005F60C9 /* YCCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCommentTests.m; sourceTree = "<group>"; };
+		93F2773319010B5000963DBB /* YCRecipeVCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCRecipeVCTests.m; sourceTree = "<group>"; };
+		93F2773519010B7E00963DBB /* YCUserDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCUserDataTests.m; sourceTree = "<group>"; };
+		93F2773A19010BD200963DBB /* YCMyRecipesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMyRecipesVC.h; sourceTree = "<group>"; };
+		93F2773B19010BD200963DBB /* YCMyRecipesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMyRecipesVC.m; sourceTree = "<group>"; };
+		93F2773F19010BFB00963DBB /* YCUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCUserData.h; sourceTree = "<group>"; };
+		93F2774019010BFB00963DBB /* YCUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCUserData.m; sourceTree = "<group>"; };
+		93F277451901244500963DBB /* YCSavedRecipesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSavedRecipesService.h; sourceTree = "<group>"; };
+		93F277461901244500963DBB /* YCSavedRecipesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSavedRecipesService.m; sourceTree = "<group>"; };
+		93F27748190124C600963DBB /* YCCoreRecipeListService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCCoreRecipeListService.h; sourceTree = "<group>"; };
+		93F27749190124C600963DBB /* YCCoreRecipeListService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCoreRecipeListService.m; sourceTree = "<group>"; };
+		93F2774C190130E500963DBB /* YCSubmitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSubmitVC.h; sourceTree = "<group>"; };
+		93F2774D190130E500963DBB /* YCSubmitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSubmitVC.m; sourceTree = "<group>"; };
+		93F2774F1901323300963DBB /* YCSubmitVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCSubmitVC.xib; sourceTree = "<group>"; };
+		93F27751190154CE00963DBB /* YCSubmitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSubmitCell.h; sourceTree = "<group>"; };
+		93F27752190154CE00963DBB /* YCSubmitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSubmitCell.m; sourceTree = "<group>"; };
+		93F27753190154CE00963DBB /* YCSubmitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCSubmitCell.xib; sourceTree = "<group>"; };
+		93F277561906C40B00963DBB /* YCSubmitRecipeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSubmitRecipeService.h; sourceTree = "<group>"; };
+		93F277571906C40B00963DBB /* YCSubmitRecipeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSubmitRecipeService.m; sourceTree = "<group>"; };
+		93F277591906CA0100963DBB /* YCSubmitVCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSubmitVCTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9315E50818FC20E4007DE128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EA895019228363005F60C9 /* AdSupport.framework in Frameworks */,
+				93E8985A19175E7A00ECD8F7 /* ImageIO.framework in Frameworks */,
+				93E89855191687D300ECD8F7 /* MobileCoreServices.framework in Frameworks */,
+				93E89804191285C200ECD8F7 /* Social.framework in Frameworks */,
+				9315E51118FC20E4007DE128 /* CoreGraphics.framework in Frameworks */,
+				9315E51318FC20E4007DE128 /* UIKit.framework in Frameworks */,
+				9315E50F18FC20E4007DE128 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9315E52318FC20E5007DE128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931AF2DF191D096700D53E2E /* libOCMock.a in Frameworks */,
+				93E898561916881B00ECD8F7 /* MobileCoreServices.framework in Frameworks */,
+				9315E52818FC20E5007DE128 /* XCTest.framework in Frameworks */,
+				9315E52A18FC20E5007DE128 /* UIKit.framework in Frameworks */,
+				9315E52918FC20E5007DE128 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9315E50218FC20E4007DE128 = {
+			isa = PBXGroup;
+			children = (
+				9315E51418FC20E4007DE128 /* YouCook */,
+				9315E52D18FC20E5007DE128 /* YouCookTests */,
+				9315E50D18FC20E4007DE128 /* Frameworks */,
+				9315E50C18FC20E4007DE128 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9315E50C18FC20E4007DE128 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9315E50B18FC20E4007DE128 /* YouCook.app */,
+				9315E52618FC20E5007DE128 /* YouCookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9315E50D18FC20E4007DE128 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93EA894F19228363005F60C9 /* AdSupport.framework */,
+				931AF2DE191D096700D53E2E /* libOCMock.a */,
+				93E8985919175E7A00ECD8F7 /* ImageIO.framework */,
+				93E89854191687D300ECD8F7 /* MobileCoreServices.framework */,
+				93E89803191285C200ECD8F7 /* Social.framework */,
+				9315E50E18FC20E4007DE128 /* Foundation.framework */,
+				9315E51018FC20E4007DE128 /* CoreGraphics.framework */,
+				9315E51218FC20E4007DE128 /* UIKit.framework */,
+				9315E52718FC20E5007DE128 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9315E51418FC20E4007DE128 /* YouCook */ = {
+			isa = PBXGroup;
+			children = (
+				934570B2191A3CDB009F68F2 /* Assets */,
+				93E897FE1912550900ECD8F7 /* Utilities */,
+				93E897F219114FBB00ECD8F7 /* Categories */,
+				9315E54B18FD1F2B007DE128 /* Model */,
+				9315E53D18FC2175007DE128 /* ViewControllers */,
+				9315E51D18FC20E4007DE128 /* YCAppDelegate.h */,
+				9315E51E18FC20E4007DE128 /* YCAppDelegate.m */,
+				9315E52018FC20E4007DE128 /* Images.xcassets */,
+				9315E51518FC20E4007DE128 /* Supporting Files */,
+			);
+			path = YouCook;
+			sourceTree = "<group>";
+		};
+		9315E51518FC20E4007DE128 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9315E51618FC20E4007DE128 /* YouCook-Info.plist */,
+				9315E51718FC20E4007DE128 /* InfoPlist.strings */,
+				9315E51A18FC20E4007DE128 /* main.m */,
+				9315E51C18FC20E4007DE128 /* YouCook-Prefix.pch */,
+				93E8980F1914EC5100ECD8F7 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9315E52D18FC20E5007DE128 /* YouCookTests */ = {
+			isa = PBXGroup;
+			children = (
+				93EA89701924EA4F005F60C9 /* YCCommentTests.m */,
+				931AF2E0191D0F4C00D53E2E /* YCMyRecipesVCTests.m */,
+				93E897F01911400400ECD8F7 /* YCSearchServiceTests.m */,
+				93F277591906CA0100963DBB /* YCSubmitVCTests.m */,
+				93F2773519010B7E00963DBB /* YCUserDataTests.m */,
+				93F2773319010B5000963DBB /* YCRecipeVCTests.m */,
+				9315E60518FD8178007DE128 /* YCSearchVCTests.m */,
+				9315E54918FC2540007DE128 /* YCStartVCTests.m */,
+				9315E52E18FC20E5007DE128 /* Supporting Files */,
+			);
+			path = YouCookTests;
+			sourceTree = "<group>";
+		};
+		9315E52E18FC20E5007DE128 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9315E52F18FC20E5007DE128 /* YouCookTests-Info.plist */,
+				9315E53018FC20E5007DE128 /* InfoPlist.strings */,
+				9315E55418FD2604007DE128 /* exampleSearchResults */,
+				9315E60218FD747F007DE128 /* content.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9315E53D18FC2175007DE128 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				93F2774B190130C300963DBB /* Submit */,
+				9315E57018FD512B007DE128 /* ShowRecipe */,
+				9315E56F18FD5109007DE128 /* Start */,
+				93F2773919010BAE00963DBB /* MyRecipes */,
+				9315E54318FC23B1007DE128 /* Search */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9315E54318FC23B1007DE128 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9315E56A18FD4ED9007DE128 /* YCIngredientCell.h */,
+				9315E56B18FD4ED9007DE128 /* YCIngredientCell.m */,
+				9315E56C18FD4ED9007DE128 /* YCIngredientCell.xib */,
+				9315E54418FC23D8007DE128 /* YCSearchVC.h */,
+				9315E54518FC23D8007DE128 /* YCSearchVC.m */,
+				9315E54618FC23D8007DE128 /* YCSearchVC.xib */,
+				9315E56518FD4412007DE128 /* YCRecipeCell.h */,
+				9315E56618FD4412007DE128 /* YCRecipeCell.m */,
+				9315E56718FD4412007DE128 /* YCRecipeCell.xib */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		9315E54B18FD1F2B007DE128 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93F2774419010CD000963DBB /* DataSupportServices */,
+				9315E54D18FD1F41007DE128 /* DataObjects */,
+				9315E54C18FD1F36007DE128 /* DatabaseAccessServices */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9315E54C18FD1F36007DE128 /* DatabaseAccessServices */ = {
+			isa = PBXGroup;
+			children = (
+				9315E55118FD2038007DE128 /* YCSearchService.h */,
+				9315E55218FD2038007DE128 /* YCSearchService.m */,
+				93F277451901244500963DBB /* YCSavedRecipesService.h */,
+				93F277461901244500963DBB /* YCSavedRecipesService.m */,
+				93F27748190124C600963DBB /* YCCoreRecipeListService.h */,
+				93F27749190124C600963DBB /* YCCoreRecipeListService.m */,
+				93F277561906C40B00963DBB /* YCSubmitRecipeService.h */,
+				93F277571906C40B00963DBB /* YCSubmitRecipeService.m */,
+				93E89805191393EC00ECD8F7 /* YCAbstractNetworkService.h */,
+				93E89806191393EC00ECD8F7 /* YCAbstractNetworkService.m */,
+				93EA89611923B157005F60C9 /* YCCommentSearchService.h */,
+				93EA89621923B157005F60C9 /* YCCommentSearchService.m */,
+				93EA896D1924A6D5005F60C9 /* YCCommentAddService.h */,
+				93EA896E1924A6D5005F60C9 /* YCCommentAddService.m */,
+			);
+			name = DatabaseAccessServices;
+			sourceTree = "<group>";
+		};
+		9315E54D18FD1F41007DE128 /* DataObjects */ = {
+			isa = PBXGroup;
+			children = (
+				9315E54E18FD1F6F007DE128 /* YCRecipe.h */,
+				9315E54F18FD1F6F007DE128 /* YCRecipe.m */,
+				93F2773F19010BFB00963DBB /* YCUserData.h */,
+				93F2774019010BFB00963DBB /* YCUserData.m */,
+				93EA89641923B38E005F60C9 /* YCComment.h */,
+				93EA89651923B38E005F60C9 /* YCComment.m */,
+			);
+			name = DataObjects;
+			sourceTree = "<group>";
+		};
+		9315E56F18FD5109007DE128 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				9315E53E18FC21A0007DE128 /* YCStartVC.h */,
+				9315E53F18FC21A0007DE128 /* YCStartVC.m */,
+				9315E54018FC21A0007DE128 /* YCStartVC.xib */,
+			);
+			name = Start;
+			sourceTree = "<group>";
+		};
+		9315E57018FD512B007DE128 /* ShowRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				93EA896719249B16005F60C9 /* Comment */,
+				9315E57118FD515C007DE128 /* YCRecipeVC.h */,
+				9315E57218FD515C007DE128 /* YCRecipeVC.m */,
+				9315E57318FD515C007DE128 /* YCRecipeVC.xib */,
+			);
+			name = ShowRecipe;
+			sourceTree = "<group>";
+		};
+		934570B2191A3CDB009F68F2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				93EA89211920D643005F60C9 /* Logo200.jpg */,
+				931AF2E6191D2E8400D53E2E /* YCMain@2x.jpg */,
+				931AF2E4191D2E7E00D53E2E /* YCMain.jpg */,
+				934570C3191A4C56009F68F2 /* pageBg0.png */,
+				934570C4191A4C56009F68F2 /* pageBg1.png */,
+				934570C5191A4C56009F68F2 /* pageBg2.png */,
+				934570C6191A4C56009F68F2 /* pageBg3.png */,
+				934570C7191A4C56009F68F2 /* pageBg4.png */,
+				934570C8191A4C56009F68F2 /* pageBg5.png */,
+				934570CF191A5127009F68F2 /* pageBg6.png */,
+				934570D0191A5127009F68F2 /* pageBg7.png */,
+				934570D1191A5127009F68F2 /* pageBg8.png */,
+				934570D2191A5127009F68F2 /* pageBg9.png */,
+				934570D3191A5127009F68F2 /* pageBg10.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		93E897F219114FBB00ECD8F7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				93E897F41911501000ECD8F7 /* NSString+HTML.h */,
+				93E897F91911502E00ECD8F7 /* NSString+HTML.m */,
+				93E897F81911502400ECD8F7 /* GTMNSString+HTML.h */,
+				93E897F51911501700ECD8F7 /* GTMNSString+HTML.m */,
+				93E8985E19176E9100ECD8F7 /* UIImagePickerController+OrientationFix.h */,
+				93E8985F19176E9100ECD8F7 /* UIImagePickerController+OrientationFix.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		93E897FE1912550900ECD8F7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				93E897FF1912552200ECD8F7 /* SSKeychain.h */,
+				93E898001912552C00ECD8F7 /* SSKeychain.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		93EA896719249B16005F60C9 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				93EA896819249B35005F60C9 /* YCCommentVC.h */,
+				93EA896919249B35005F60C9 /* YCCommentVC.m */,
+				93EA896A19249B35005F60C9 /* YCCommentVC.xib */,
+			);
+			name = Comment;
+			sourceTree = "<group>";
+		};
+		93F2773919010BAE00963DBB /* MyRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				93F2773A19010BD200963DBB /* YCMyRecipesVC.h */,
+				93F2773B19010BD200963DBB /* YCMyRecipesVC.m */,
+			);
+			name = MyRecipes;
+			sourceTree = "<group>";
+		};
+		93F2774419010CD000963DBB /* DataSupportServices */ = {
+			isa = PBXGroup;
+			children = (
+				93E8986119178A4400ECD8F7 /* YCImageUploadService.h */,
+				93E8986219178A4400ECD8F7 /* YCImageUploadService.m */,
+			);
+			name = DataSupportServices;
+			sourceTree = "<group>";
+		};
+		93F2774B190130C300963DBB /* Submit */ = {
+			isa = PBXGroup;
+			children = (
+				93F2774C190130E500963DBB /* YCSubmitVC.h */,
+				93F2774D190130E500963DBB /* YCSubmitVC.m */,
+				93F2774F1901323300963DBB /* YCSubmitVC.xib */,
+				93F27751190154CE00963DBB /* YCSubmitCell.h */,
+				93F27752190154CE00963DBB /* YCSubmitCell.m */,
+				93F27753190154CE00963DBB /* YCSubmitCell.xib */,
+			);
+			name = Submit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9315E50A18FC20E4007DE128 /* YouCook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9315E53718FC20E5007DE128 /* Build configuration list for PBXNativeTarget "YouCook" */;
+			buildPhases = (
+				9315E50718FC20E4007DE128 /* Sources */,
+				9315E50818FC20E4007DE128 /* Frameworks */,
+				9315E50918FC20E4007DE128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouCook;
+			productName = YouCook;
+			productReference = 9315E50B18FC20E4007DE128 /* YouCook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9315E52518FC20E5007DE128 /* YouCookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9315E53A18FC20E5007DE128 /* Build configuration list for PBXNativeTarget "YouCookTests" */;
+			buildPhases = (
+				9315E52218FC20E5007DE128 /* Sources */,
+				9315E52318FC20E5007DE128 /* Frameworks */,
+				9315E52418FC20E5007DE128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9315E52C18FC20E5007DE128 /* PBXTargetDependency */,
+			);
+			name = YouCookTests;
+			productName = YouCookTests;
+			productReference = 9315E52618FC20E5007DE128 /* YouCookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9315E50318FC20E4007DE128 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jon Woodhead";
+				TargetAttributes = {
+					9315E52518FC20E5007DE128 = {
+						TestTargetID = 9315E50A18FC20E4007DE128;
+					};
+				};
+			};
+			buildConfigurationList = 9315E50618FC20E4007DE128 /* Build configuration list for PBXProject "YouCook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9315E50218FC20E4007DE128;
+			productRefGroup = 9315E50C18FC20E4007DE128 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9315E50A18FC20E4007DE128 /* YouCook */,
+				9315E52518FC20E5007DE128 /* YouCookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9315E50918FC20E4007DE128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9315E51918FC20E4007DE128 /* InfoPlist.strings in Resources */,
+				934570CD191A4C56009F68F2 /* pageBg4.png in Resources */,
+				934570C9191A4C56009F68F2 /* pageBg0.png in Resources */,
+				934570CB191A4C56009F68F2 /* pageBg2.png in Resources */,
+				934570D8191A5127009F68F2 /* pageBg10.png in Resources */,
+				934570D4191A5127009F68F2 /* pageBg6.png in Resources */,
+				934570D6191A5127009F68F2 /* pageBg8.png in Resources */,
+				93E8980C1914EC5100ECD8F7 /* Localizable.strings in Resources */,
+				934570D7191A5127009F68F2 /* pageBg9.png in Resources */,
+				931AF2E5191D2E7E00D53E2E /* YCMain.jpg in Resources */,
+				9315E54218FC21A0007DE128 /* YCStartVC.xib in Resources */,
+				934570D5191A5127009F68F2 /* pageBg7.png in Resources */,
+				9315E54818FC23D8007DE128 /* YCSearchVC.xib in Resources */,
+				93EA89221920D643005F60C9 /* Logo200.jpg in Resources */,
+				93F277501901323300963DBB /* YCSubmitVC.xib in Resources */,
+				934570CA191A4C56009F68F2 /* pageBg1.png in Resources */,
+				9315E55518FD2604007DE128 /* exampleSearchResults in Resources */,
+				9315E57518FD515C007DE128 /* YCRecipeVC.xib in Resources */,
+				934570CC191A4C56009F68F2 /* pageBg3.png in Resources */,
+				9315E56E18FD4ED9007DE128 /* YCIngredientCell.xib in Resources */,
+				934570CE191A4C56009F68F2 /* pageBg5.png in Resources */,
+				9315E60318FD747F007DE128 /* content.txt in Resources */,
+				9315E52118FC20E4007DE128 /* Images.xcassets in Resources */,
+				93F27755190154CE00963DBB /* YCSubmitCell.xib in Resources */,
+				93EA896C19249B35005F60C9 /* YCCommentVC.xib in Resources */,
+				9315E56918FD4412007DE128 /* YCRecipeCell.xib in Resources */,
+				931AF2E7191D2E8400D53E2E /* YCMain@2x.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9315E52418FC20E5007DE128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9315E60418FD747F007DE128 /* content.txt in Resources */,
+				93E8980D1914EC5100ECD8F7 /* Localizable.strings in Resources */,
+				9315E55618FD2604007DE128 /* exampleSearchResults in Resources */,
+				9315E53218FC20E5007DE128 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9315E50718FC20E4007DE128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9315E51F18FC20E4007DE128 /* YCAppDelegate.m in Sources */,
+				93F2774A190124C600963DBB /* YCCoreRecipeListService.m in Sources */,
+				93E898011912552C00ECD8F7 /* SSKeychain.m in Sources */,
+				9315E54118FC21A0007DE128 /* YCStartVC.m in Sources */,
+				9315E56D18FD4ED9007DE128 /* YCIngredientCell.m in Sources */,
+				93EA896F1924A6D5005F60C9 /* YCCommentAddService.m in Sources */,
+				93EA89661923B38E005F60C9 /* YCComment.m in Sources */,
+				93E897FA1911502E00ECD8F7 /* NSString+HTML.m in Sources */,
+				9315E54718FC23D8007DE128 /* YCSearchVC.m in Sources */,
+				9315E55318FD2038007DE128 /* YCSearchService.m in Sources */,
+				9315E56818FD4412007DE128 /* YCRecipeCell.m in Sources */,
+				93E897F61911501700ECD8F7 /* GTMNSString+HTML.m in Sources */,
+				93F2774119010BFB00963DBB /* YCUserData.m in Sources */,
+				93F27754190154CE00963DBB /* YCSubmitCell.m in Sources */,
+				93E89807191393EC00ECD8F7 /* YCAbstractNetworkService.m in Sources */,
+				9315E51B18FC20E4007DE128 /* main.m in Sources */,
+				9315E57418FD515C007DE128 /* YCRecipeVC.m in Sources */,
+				93F277581906C40B00963DBB /* YCSubmitRecipeService.m in Sources */,
+				93F277471901244500963DBB /* YCSavedRecipesService.m in Sources */,
+				93EA89631923B157005F60C9 /* YCCommentSearchService.m in Sources */,
+				93F2774E190130E500963DBB /* YCSubmitVC.m in Sources */,
+				93F2773D19010BD200963DBB /* YCMyRecipesVC.m in Sources */,
+				93EA896B19249B35005F60C9 /* YCCommentVC.m in Sources */,
+				93E8986019176E9100ECD8F7 /* UIImagePickerController+OrientationFix.m in Sources */,
+				93E8986319178A4400ECD8F7 /* YCImageUploadService.m in Sources */,
+				9315E55018FD1F6F007DE128 /* YCRecipe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9315E52218FC20E5007DE128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E89808191393EC00ECD8F7 /* YCAbstractNetworkService.m in Sources */,
+				93F2773419010B5000963DBB /* YCRecipeVCTests.m in Sources */,
+				9315E60618FD8178007DE128 /* YCSearchVCTests.m in Sources */,
+				93E898121914F8AA00ECD8F7 /* YCSearchService.m in Sources */,
+				931AF2E1191D0F4C00D53E2E /* YCMyRecipesVCTests.m in Sources */,
+				93EA89711924EA4F005F60C9 /* YCCommentTests.m in Sources */,
+				93E897FB1911502E00ECD8F7 /* NSString+HTML.m in Sources */,
+				93E897F71911501700ECD8F7 /* GTMNSString+HTML.m in Sources */,
+				93E898111914F8A600ECD8F7 /* YCUserData.m in Sources */,
+				93F2775A1906CA0100963DBB /* YCSubmitVCTests.m in Sources */,
+				93F2773619010B7E00963DBB /* YCUserDataTests.m in Sources */,
+				93E898021912552C00ECD8F7 /* SSKeychain.m in Sources */,
+				9315E54A18FC2540007DE128 /* YCStartVCTests.m in Sources */,
+				93E897F11911400400ECD8F7 /* YCSearchServiceTests.m in Sources */,
+				93E898101914F89B00ECD8F7 /* YCRecipe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9315E52C18FC20E5007DE128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9315E50A18FC20E4007DE128 /* YouCook */;
+			targetProxy = 9315E52B18FC20E5007DE128 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9315E51718FC20E4007DE128 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9315E51818FC20E4007DE128 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9315E53018FC20E5007DE128 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9315E53118FC20E5007DE128 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93E8980F1914EC5100ECD8F7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93E8980E1914EC5100ECD8F7 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9315E53518FC20E5007DE128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		9315E53618FC20E5007DE128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9315E53818FC20E5007DE128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YouCook/YouCook-Prefix.pch";
+				INFOPLIST_FILE = "YouCook/YouCook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9315E53918FC20E5007DE128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Woodhead Consultancy Services Limited (89LA9NN8LZ)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YouCook/YouCook-Prefix.pch";
+				INFOPLIST_FILE = "YouCook/YouCook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9315E53B18FC20E5007DE128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YouCook.app/YouCook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YouCook/YouCook-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/External",
+				);
+				INFOPLIST_FILE = "YouCookTests/YouCookTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9315E53C18FC20E5007DE128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YouCook.app/YouCook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YouCook/YouCook-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/External",
+				);
+				INFOPLIST_FILE = "YouCookTests/YouCookTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9315E50618FC20E4007DE128 /* Build configuration list for PBXProject "YouCook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9315E53518FC20E5007DE128 /* Debug */,
+				9315E53618FC20E5007DE128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9315E53718FC20E5007DE128 /* Build configuration list for PBXNativeTarget "YouCook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9315E53818FC20E5007DE128 /* Debug */,
+				9315E53918FC20E5007DE128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9315E53A18FC20E5007DE128 /* Build configuration list for PBXNativeTarget "YouCookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9315E53B18FC20E5007DE128 /* Debug */,
+				9315E53C18FC20E5007DE128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9315E50318FC20E4007DE128 /* Project object */;
+}

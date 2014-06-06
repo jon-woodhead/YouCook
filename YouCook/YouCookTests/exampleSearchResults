@@ -1,0 +1,45 @@
+<xml>
+<OK>YES</OK>
+<recipe>
+<id>1</id>
+<title>Cheese and Mackerel Pie</title>
+<outline>This recipe combines fish and potatos to make a fishy pie</outline>
+<photo/>
+<ingredients><ingredient>1 tin mackerel</ingredient>
+                <ingredient> 4 potatos</ingredient>
+                <ingredient> 2 oz grated cheddar cheese</ingredient>
+                <ingredient> salt</ingredient>
+                <ingredient> pepper</ingredient>
+                <ingredient> paprika (optional)</ingredient>
+                <ingredient>  Milk and butter for mashing potatos</ingredient>
+</ingredients>
+<instructions>Cook and mash the potatos. Put the Makerel in an oven proof dish. Season with salt, pepper and paprika. Cover with potatos. Sprinkle on cheese. Cook in oven at 150C for 30 minutes.</instructions>
+<chef>Jamie</chef>
+<chefCode>JamieCode</chefCode>
+</recipe>
+
+
+
+<recipe>
+<id>47</id>
+<title>Curried Parsnip Soup</title>
+<outline>A very flexible recipe. You can vary the ingredients and amounts at will and still produce an interesting result</outline>
+<photo/>
+<ingredients>
+    <ingredient>1 Onion</ingredient>
+    <ingredient> 1 Tablespoon oil</ingredient>
+    <ingredient>4 Large Parsnips</ingredient>
+    <ingredient> 3 teaspoons meduim curry powder</ingredient>
+    <ingredient> Other root vegetables (optional)</ingredient>
+    <ingredient> Salt</ingredient>
+    <ingredient> pepper</ingredient>
+    <ingredient>  1 teaspoon on mustard (optional)</ingredient>
+</ingredients>
+<instructions>Roughly chop and fry the onion. After 3 minutes add the curry powder and mustard. After another 3 minutes add the vegetables (peeled and roughly chopped). Add the rest of the ingredients. Add anything else you fancy. Cover with water. Bring to the boil and allow to simmer for 30 minutes. Allow to cool. Liquidise. This soup improves with being allowed to stand for up to a day. It also freezes well. Just before required, heat it up. If its a bit too spicy add with a swirl of plain yoghurt into each bowl. A sprinkle of paprika on the top looks fancy. Serve with crusty breadd</instructions>
+<chef>Gordon</chef>
+<chefCode>GordonCode</chefCode>
+</recipe>
+
+
+
+</xml>

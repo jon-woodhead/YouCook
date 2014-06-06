@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  YouCook
+
+  Created by Jon Woodhead on 03/05/2014.
+  Copyright (c) 2014 Jon Woodhead. All rights reserved.
+*/
+/* I am just using this for alert messages to keep them in one place*/
+//SearchVC
+
+"SEARCH_FAILED_TITLE" = "Search Failed";
+"SEARCH_FAILED_MESSAGE" = "The search for recipes failed. This probably indicates a poor network connection.";
+"SEARCH_NO_RESULTS_MESSAGE" = "The search for recipes failed to find any results. Try changing your keywords. Or why not add a recipe yourself?";
+//MyRecipesVC
+"SAVED_FAILED_TITLE" = "Data request Failed";
+"SAVED_FAILED_MESSAGE" ="Failed to get data for your saved recipes. This probably indicates a poor network connection.";
+"SAVED_NO_RESULTS_MESSAGE" = "The search for your recipes failed to find any results. Try unsaving your recipes and re-saving them";
+
+//Submit
+"SUBMIT_NO_TITLE" ="Your recipe has no title";
+"SUBMIT_NO_CHEF" ="You have not included a user name";
+"SUBMIT_NO_OUTLINE" ="You should include a brief description of your recipe";
+"SUBMIT_NO_INSTRUCTIONS" ="Your recipe should include detailed instructions";
+"SUBMIT_NO_INGREDIENTS" ="Your recipe should include a list of ingredients";
+"SUBMIT_WARNING" = "Warning";
+"SUBMIT_REALLY" = "Do you really want to submit?";
+"SUBMIT_FAILED_TITLE" = "Submit failure";
+"SUBMIT_FAILED_MESSAGE" = "The submission of your recipe failed. Probably due to a poor network connection.";
+"SUBMIT_SUCCESS_TITLE" = "Submission successful";
+"SUBMIT_SUCCESS_MESSAGE" = "Your recipe has been added to the database.";
+
+//RecipeVC Sharing
+"SHARE_MESSAGE" = "I have been using the You Cook App to cook";
+"TWITTER_FAILED_TITLE" = "Twitter unavailable";
+"TWITTER_FAILED_MESSAGE" = "You do not appear to have registered a Twitter account with this device";
+"FB_FAILED_TITLE" = "Facebook unavailable";
+"FB_FAILED_MESSAGE" = "You do not appear to have registered a Facebook account with this device";
+
+// submission copyright warning
+"COPYRIGHT_TITLE" = "Is This Your Recipe?";
+"COPYRIGHT_MESSAGE" = "Please do not submit recipes copied from books, magazines or the internet. Those recipes are the copyright of their authors. For You Cook we want your own recipes.";
+
+//submitting a comment
+"COMMENT_FAILED_TITLE" = "Submission Failed";
+"COMMENT_FAILED_MESSAGE" = "The submission of your comment failed. Possibly due to a poor network connection.";
